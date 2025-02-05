@@ -1,7 +1,7 @@
 let arr = [5, 25, 35, 45];
 arr = [4, 233, 23, 422, 34, 53]
 arr[1] = 34;
-//console.log(arr.length)
+console.log(arr.length)
 
 
 const clearBtn = document.getElementById("buttonConsole");
@@ -16,9 +16,10 @@ function buttonClick() {
         console.log(i);
     }
 
+    let one;
+    one = 25;
 
-
-
+    console.log(one);
 
 
 
