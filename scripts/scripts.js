@@ -18,8 +18,8 @@ function buttonClick() {
 
     let one;
     one = 25;
-
-    console.log(one);
+    let two = [4, 4, 4];
+    console.log(two);
 
 
 
