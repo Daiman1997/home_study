@@ -20,8 +20,12 @@ function buttonClick() {
     one = 25;
     let two = [4, 4, 4];
     console.log(two);
-    asdfasd
-
+    
+    if (one >= tho) {
+        console.log(true);
+    } else {
+        console.log(false);
+    }
 
 
 
