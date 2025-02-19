@@ -6,7 +6,7 @@ const button = document.getElementById("button");
 button.addEventListener("click", buttonClick);
 
 function buttonClick() {
-    let one;
+    /* let one;
     one = 25;
     let two = [4, 4, 4];
     console.log(two);
@@ -18,11 +18,11 @@ function buttonClick() {
     }
     
     let age = prompt('Сколько тебе лет?');
-    if (age != '') {
+    if (age != '' && age != null) {
         alert(`Ему ${age} года`);
-    }else {
+    } else {
         alert('Не родился еще(');
-    }
+    } */
 }
 
 // Типы данных -  всего 8 типов. 7 из них примитивные, и Object не примитивен
@@ -58,11 +58,6 @@ arr = [4, 233, 23, 422, 34, 53];
 arr[1] = 34;
 //console.log(arr.length);
 
-//Цыклы 
-for(let i = 0; i < 10; ++i) {
-    //console.log(i);
-}
-
 //Операторы сравнения
 // больше > 
 // меньше < 
@@ -72,6 +67,49 @@ for(let i = 0; i < 10; ++i) {
 // строгое равно ===
 // меньше или равно <=
 // больше или равно >=
-// или ||
-// и && 
-// оператор нулевого сравнения ??
+// или || находит первый true
+// и && находит первый false 
+// оператор нулевого сравнения ?? сравнивает null/undefined находит первый известрный 
+let age = 24;
+if (age >= 14 && age <= 90) {};
+if (!(age >= 14 && age <= 90)) {};
+if (age < 14 || age > 90) {}
+
+/* let user = prompt('Кто там?');
+if (user == 'Админ') {
+    let pass = prompt('Пароль?');
+    if (pass == 'Я главный') {
+        alert('Здравствуйте!');
+    } else if (pass == null || pass == '') {
+        alert('Отменено');
+    } else {
+        alert('Не верный пароль');
+    };
+} else if (user == '' || user == null) {
+    alert('Отменено');
+} else {
+    alert('Я вас не знаю');
+};
+ */
+let num1 = 10,
+    num2 = 20,
+    result;
+
+    result ??= num1 ?? num2;
+
+
+    //Цыклы 
+for(let i = 0; i < 10; ++i) {
+    //console.log(i);
+};
+
+let i = 0;
+while (i < 3) { // выводит 0, затем 1, затем 2
+//   alert( i );
+  i++;
+}
+
+do {
+//   alert( i );
+  i++;
+} while (i < 3);
